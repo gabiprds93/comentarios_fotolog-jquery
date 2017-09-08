@@ -24,6 +24,8 @@ const app =
     {
         localStorage.setItem(app.item.name.val(), app.item.comment.val());
         app.showComments();
+        app.item.name.val("");
+        app.item.comment.val("");
     },
     
     showComments: function()
